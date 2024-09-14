@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +11,117 @@
 <body>
     <header>
         <!-- ********navbar container******* -->
-        <nav>
-            <a href=""><button>P-Ticket</button></a>
-            <button>Home</button>
-            <button>About</button>
-            <button>Destination</button>
-            <button>Search</button>
-            <button>Bus</button>
+        <nav class=" flex justify-around items-center p-14 font-raleway">
+            <div class="text-4xl font-bold cursor-pointer">
+                <a href=""><button>P-Ticket</button></a>
+            </div>
+            <div class="space-x-12 text-xl font-semibold">
+                <button>Home</button>
+                <button>About</button>
+                <button>Destination</button>
+                <button>Search</button>
+            </div>
+            <div class="flex gap-2 text-xl font-semibold px-8 py-4 bg-[#1DD1001A] text-[#1DD100] rounded-[12px] cursor-pointer">
+                <button>Bus</button>
+                <img src="images/bus-icon.png" alt="">
+            </div>
         </nav>
-
         <!-- *********hero container ************** -->
-        <div class="hero"></div>
+        <div class="hero">
+            <img class="w-[1450px]" src="images/banner.png" alt="">
+        </div>
+        
+        <!-- ********* card or selling, users etc information container ******** -->
+         <div class="flex justify-center items-center gap-6 relative bottom-12">
+            <div class="flex px-20 py-12 bg-white border-b-4 border-b-[#1DD100] rounded-lg w-[400px] h-[150px] items-center gap-3">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h2 class="text-3xl font-bold">500K+</h2>
+                    <p class="text-base text-gray-500">Registered users</p>
+                </div> 
+            </div>
+            <div class="flex px-20 py-12 bg-white border-b-4 border-b-[#1DD100] rounded-lg w-[400px] h-[150px] items-center gap-3">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h2 class="text-3xl font-bold">1.7 lacks</h2>
+                    <p class="text-base text-gray-500">Tickets sold</p>
+                </div> 
+            </div>
+            <div class="flex px-20 py-12 bg-white border-b-4 border-b-[#1DD100] rounded-lg w-[400px] h-[150px] items-center gap-3">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h2 class="text-3xl font-bold">80K+</h2>
+                    <p class="text-base text-gray-500">Rental partners</p>
+                </div> 
+            </div>
+        </div>
 
-        <!-- *********card or selling, users etc information container ******** -->
-        <div class="site-information"></div>
-
-        <!-- ********ticket offer container -->
-        <div class="offers"></div>
+        <!-- ******** ticket offers container -->
+             <!-- offer heading text -->
+        <div class="text-center justify-center mt-16">
+            <h2 class="text-4xl font-bold ">Best offers for you</h2>
+        </div>
+        <!-- offer cards/tickets -->
+         <div class="flex justify-center gap-10 mt-14">
+            <div class="flex items-center gap-20 bg-[#FFBF0F] w-[570px] h-[220px] justify-center py-5 rounded-lg">
+                <div class="font-bold">
+                    <h2 class="text-3xl">15% Off</h2>
+                    <h5 class="text-normal">on your next purchase</h5>
+                    <p class="font-normal text-gray-500">use by January 2024</p>
+                </div>
+                <span><img src="images/cupon-devider.png" alt=""></span>
+                <div>
+                    <h2 class="font-bold text-3xl">NEW15</h2>
+                    <p class="font-normal text-gray-500">Coupon Code</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-20 bg-[#F78C9C] w-[570px] h-[220px] justify-center py-5 rounded-lg">
+                <div class="font-bold">
+                    <h2 class="text-3xl">20% Off</h2>
+                    <h5 class="text-normal">on your next purchase</h5>
+                    <p class="font-normal text-gray-500">use by January 2024</p>
+                </div>
+                <span><img src="images/cupon-devider.png" alt=""></span>
+                <div>
+                    <h2 class="font-bold text-3xl">NEW15</h2>
+                    <p class="font-normal text-gray-500">Couple Code</p>
+                </div>
+            </div>
+         </div>
+         <!-- see more offer button -->
+          <div class="flex justify-center mt-14 mb-32">
+            <button class="text-xl bg-white border-[2px] border-[#1DD100] text-[#1DD100] font-semibold px-4 py-2 rounded-lg text-center">See More Offers</button>
+          </div>
     </header>
-    <main></main>
+    <main class="bg-gray-100 h-[2400px] border-t-2 border-t-[#1DD100] rounded-t-[80px]">
+        <div class="text-center space-y-5 mt-[120px]">
+            <h2  class="text-4xl font-bold">P.H Paribahan</h2>
+            <p class="text-gray-500 text-xl">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+        </div>
+
+        <div class="flex w-[1200px] h-[410px] bg-white justify-between">
+            <div>
+                <div class="flex w-[800px] justify-between items-center">
+                    <div class="flex gap-5">
+                        <div>
+                            <img src="images/bus-logo.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Greenline Paribahan</h3>
+                            <p>Coach-009-WEB ! AC_Business</p>
+                        </div>  
+                    </div>
+                    <div class="flex gap-2 text-xl font-semibold px-8 py-4 bg-[#1DD1001A] text-[#1DD100] rounded-[12px] cursor-pointer">
+                        <button>Bus</button>
+                        <img src="images/bus-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>550 Taka Per Seat</h3>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>
