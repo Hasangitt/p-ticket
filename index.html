@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header container -->
     <header>
         <!-- ********navbar container******* -->
         <nav class=" flex justify-around items-center p-14 font-raleway">
@@ -93,16 +94,24 @@
             <button class="text-xl bg-white border-[2px] border-[#1DD100] text-[#1DD100] font-semibold px-4 py-2 rounded-lg text-center">See More Offers</button>
           </div>
     </header>
+
+
+    <!-- main container -->
     <main class="bg-gray-100 h-[2400px] border-t-2 border-t-[#1DD100] rounded-t-[80px]">
+        
+        <!-- main container heading -->
         <div class="text-center space-y-5 mt-[120px]">
             <h2  class="text-4xl font-bold">P.H Paribahan</h2>
             <p class="text-gray-500 text-xl">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
         </div>
 
+        <!-- how mcuh seat left content -->
         <div class="flex justify-center items-center">
             <div class="flex w-[1200px] h-[410px] bg-white justify-around py-8 rounded-lg">
+                
+                <!-- ticket details -->
                 <div class="w-[850px]">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center mb-5">
                         <div class="flex items-center gap-5">
                             <div>
                                 <img src="images/bus-logo.png" alt="">
@@ -117,8 +126,28 @@
                             <button>40 Seats left</button>
                         </div>
                     </div>
+                <!-- route/departure content -->
+                    <div class="bg-gray-100 w-[850px] h-[260px] p-5 rounded-lg space-y-5 flex flex-col justify-center">
+                        <div class="flex justify-between">
+                            <p>Route</p>
+                            <p>Dhaka-Sylhet</p>
+                        </div>
+                        <span class="">------------------------------------------------------------------------------------------------------------------------------</span>
+                        <div class="flex justify-between">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <span class="">------------------------------------------------------------------------------------------------------------------------------</span>
+                        <div class="flex justify-between">
+                            <p class="bg-gray-200 w-[230px] px-5 py-4 rounded-lg items-center text-center">Boarding Point - Laxmipur</p>
+                            <p class="bg-gray-200 w-[230px] px-5 py-4 rounded-lg items-center text-center">Dropping Point - Bogura</p>
+                            <p class="bg-gray-200 w-[230px] px-5 py-4 rounded-lg items-center text-center">Est. Time - 11 Hour</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- green border -->
                 <span class="outline-1 outline-dashed text-green-400"></span>
+                <!-- tikcet price 550tk -->
                 <div class="flex flex-col justify-center items-center text-center">
                     <img src="images/fare.png" alt="">
                     <h3 class="text-2xl font-bold">550 Taka <br><span class="text-xl text-gray-500">Per Seat</span></h3>
