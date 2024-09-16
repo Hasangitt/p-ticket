@@ -97,7 +97,7 @@
 
 
     <!-- main container -->
-    <main class="bg-gray-100 h-[2400px] border-t-2 border-t-[#1DD100] rounded-t-[80px]">
+    <main class="bg-gray-100 border-t-2 border-t-[#1DD100] rounded-t-[80px] pb-14">
         
         <!-- main container heading -->
         <div class="text-center space-y-5 mt-[120px] mb-10">
@@ -320,11 +320,43 @@
                                 <p>BDT 1100</p>
                                </div>
                         </div>
+                        <div class="space-y-8 mt-8">
+                            <h4 class="font-semibold">Passenger Name*</h4>
+                            <input type="text" placeholder="Enter your name" class="input w-[500px] outline outline-1 outline-gray-200"/>
+                            <h4 class="font-semibold">Phone Number*</h4>
+                            <input type="number" placeholder="Enter your phone number" class="input w-[500px] outline outline-1 outline-gray-200" />
+                            <h4 class="font-semibold">Email ID</h4>
+                            <input type="Enter your email id" placeholder="Type here" class="input w-[500px] outline outline-1 outline-gray-200" />
+                            <button class="w-[500px] bg-green-500 rounded-lg p-4 cursor-pointer text-white font-semibold">Next</button>
+                            <div class="space-x-10 text-center">
+                                <a class="underline" href="#">Terms and Conditions</a>
+                                <a class="underline" href="#">Cancellation Policy</a>
+                            </div>
+                        </div>
                      </div>
             </div>    
         </div>
        
     </main>
-    <footer></footer>
+
+    <!-- footer container -->
+    <footer class="bg-black px-24 py-28">
+        <div class="flex justify-around items-center">
+            <div class="space-y-5">
+                <h3 class="text-3xl font-bold text-white">P-Ticket</h3>
+                <p class="text-gray-300">P-Ticket is a digital platform to make your daily commuting better.</p>
+                <p class="text-gray-400 pt-10">@All rights reserved, Muhammad Hasan Ali Mijan.2024</p>
+            </div>
+            <div class="space-y-5 flex flex-col items-end">
+                <h3 class="text-white">Download our app</h3>
+                <img src="images/playstore.svg" alt="">
+                <div class="flex text-white gap-5 pt-10">
+                    <a class="underline" href="">Terms & condition</a>
+                    <a class="underline" href="">Return & refund policy</a>
+                    <a class="underline" href="">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
