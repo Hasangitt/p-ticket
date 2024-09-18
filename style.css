@@ -4,3 +4,8 @@
     font-family: "Raleway", sans-serif;
     
 }
+
+
+.seat.selected {
+    background-color: greenyellow;
+  }

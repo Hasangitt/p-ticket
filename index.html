@@ -112,7 +112,7 @@
             <p class="text-gray-500 text-xl">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
         </div>
 
-        <!-- how mcuh seat left content -->
+        <!-- how mcuh seat left contents -->
         <div class="flex justify-center items-center">
             <div class="flex w-[1200px] h-[410px] bg-white justify-around py-8 rounded-lg">
                 
@@ -128,9 +128,10 @@
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>  
                         </div>
+                        <!-- total seats left -->
                         <div class="flex items-center bg-green-200 rounded-xl px-4 py-2 gap-1 text-green-600">
                             <img class="w-[20px] h-[20px]" src="images/seat-green.png" alt="">
-                            <button>40 Seats left</button>
+                            <button> <span id="totalSeats">40</span> Seats Left</button>
                         </div>
                     </div>
                 <!-- route/departure content -->
@@ -203,63 +204,63 @@
                             <div class="grid grid-cols-2 gap-8">
                                 <div class="flex items-center gap-4">
                                     <p>A</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>B</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>C</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>D</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>D1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>D1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>D2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>D2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>E</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>E1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>E1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>E2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>E2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>F</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>F1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>F1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>F2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>F2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>G</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>G1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>G1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>G2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>G2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>H</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>H1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>H1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>H2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>H2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>I</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>I1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>I1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>I2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>I2</p></button>
                                 <div class="flex items-center gap-4">
                                     <p>J</p>
-                                    <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>J1</p></button>
+                                    <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>J1</p></button>
                                 </div>
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>J2</p></button>
+                                <button class="seat px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>J2</p></button>
                             </div>
 
 <!-- *************************************** A TO J SEATS RIGHT CONTAINER******************************************************************* -->
  <!-- ************************************************************************************************************************** -->
                             <!--RIGHT seats content -->
                             <div class="grid grid-cols-2 gap-8">
-                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A3</p></button>
                                 <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A4</p></button>   
                                 <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B3</p></button>
+                                <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>A3</p></button>
                                 <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>B4</p></button>   
                                 <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C3</p></button>
                                 <button class="px-8 py-3 w-[120px] h-[50px] bg-gray-400 rounded-lg"><p>C4</p></button>   
