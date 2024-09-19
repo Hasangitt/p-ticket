@@ -14,52 +14,41 @@
 
 // ***************how seats left from  total**************
 
-  //   document.addEventListener("DOMContentLoaded", () => {
-  
-  //   let totalSeats = 40;  // Set total seats
-  //   const totalSeatsDisplay = document.getElementById("totalSeats");
-  // // Update the display with the initial total
-  //   totalSeatsDisplay.innerText = totalSeats;
-  
-  //   const seats = document.querySelectorAll(".seat");
+    document.addEventListener("DOMContentLoaded", () => {
+      let seatbooking = 0;
+      const seatbookingelement = document.getElementById('seatbooking');
+      seatbookingelement.innerText = seatbooking;
+
+
+    let totalSeats = 40;  // Set total seats
+    const totalSeatsDisplay = document.getElementById("totalSeats");
+  // Update the display with the initial total
+    totalSeatsDisplay.innerText = totalSeats;
+    // selected all seats
+    const seats = document.querySelectorAll(".seat");
  
-  //   // Add click event listener to each seat
-  //   seats.forEach(seat => {
-  //     seat.addEventListener("click", () => {
-  //       // Check if the seat is not already selected
-  //       if (!seat.classList.contains("selected")) {
-  //         seat.classList.add("selected");  // Add selected class (turns green)
-  //         totalSeats--;  // Decrease the total seat count
-  //       }
-  //      else {
-  //       // Deselect the seat (if allowed)
-  //       seat.classList.remove("selected");
-  //       totalSeats++;
-  //     }
-  //       // Update the total seat display
-  //       totalSeatsDisplay.textContent = totalSeats;
-  //     });
-  //   });
-  // });
-
-  document.addEventListener('DOMContentLoaded', function(){
-     let totalSeats = 40;
-     const totalSeatsDisplay = document.getElementById('totalSeats');
-     totalSeatsDisplay.innerText = totalSeats;
-
-     const seats = document.querySelectorAll(".seat");
-     seats.forEach(seat => {
-      seat.addEventListener('click', () => {
-        if(!seat.classList.contains('selected')){
-          seat.classList.add('selected');
-          totalSeats--;
+    // Add click event listener to each seat
+    seats.forEach(seat => {
+      seat.addEventListener("click", () => {
+        // Check if the seat is not already selected
+        if (!seat.classList.contains("selected")) {
+          seat.classList.add("selected");  // Add selected class (turns green)
+          totalSeats--;  // Decrease the total seat count
+          seatbooking++;
         }
-        else{
-          seat.classList.remove('selected');
-          totalSeats++;
-        }
-        totalSeatsDisplay.innerText = totalSeats;
+       else {
+        // Deselect the seat (if allowed)
+        seat.classList.remove("selected");
+        totalSeats++;
+        seatbooking--;
+      }
+        // Update the total seat display
+        totalSeatsDisplay.textContent = totalSeats;
+        seatbookingelement.textContent = seatbooking;
       });
-     });
+    });
   });
+
+
+ 
 
